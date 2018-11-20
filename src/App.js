@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Route1 from './Route1'
 import Route2 from './Route2'
@@ -14,14 +14,14 @@ import Button from './Button'
 
 const App = (props) => (
   <div>
-    <BrowserRouter>
+    <Router>
       <div>
         <Route path="/" exact={true} component={() => <Button label="NIC!"/>} />
         <Route path="/route-1" component={Route1} />
         <Route path="/route-2" component={Route2} />
         <Route path="/route-3" component={Route3} />
       </div>
-    </BrowserRouter>
+    </Router>
   </div>
 )
 export default App;
