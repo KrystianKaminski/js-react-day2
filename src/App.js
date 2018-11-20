@@ -1,5 +1,7 @@
 import React from 'react';
-import Button from './Button'
+import Route1 from './Route1'
+import Route2 from './Route2'
+import Route3 from './Route3'
 
 const names = ['Ala', 'Ola', 'Ela']
 const namesList = names.map(name => <li key={name}>{name}</li>)
@@ -9,19 +11,10 @@ const namesList = names.map(name => <li key={name}>{name}</li>)
 
 
 const App = (props) => (
- <div>
-    <h1>{names}</h1>
-    <ul>
-      {namesList}
-    </ul>
-    <Button
-      label="Click me!"
-      onClickHandler={() => alert('Click!')}
-    />
-    <Button
-      label="Kliknij!"
-      onClickHandler={() => console.log('Klik!')}
-    />
+  <div>
+    <Route1 />
+    <Route2 />
+    <Route3 />
   </div>
 )
 export default App;
