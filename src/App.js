@@ -16,6 +16,11 @@ const App = (props) => (
     </ul>
     <Button
       label="Click me!"
+      alertText="Clicked!"
+    />
+    <Button
+      label="Kliknij!"
+      alertText="Kliknąłeś!"
     />
   </div>
 )
