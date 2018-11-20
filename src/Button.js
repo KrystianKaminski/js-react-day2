@@ -1,7 +1,11 @@
 import React from 'react'
 
-const Button = () => (
-    <button>Kliknij mnie!</button>
+const Button = ({label}) => (
+    <div>
+        <button>
+            {label}
+        </button>
+    </div>
 )
 
 export default Button

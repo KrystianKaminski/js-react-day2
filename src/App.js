@@ -14,7 +14,9 @@ const App = (props) => (
     <ul>
       {namesList}
     </ul>
-    <Button/>
+    <Button
+      label="Click me!"
+    />
   </div>
 )
 export default App;
