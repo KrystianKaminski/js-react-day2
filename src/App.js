@@ -16,11 +16,11 @@ const App = (props) => (
     </ul>
     <Button
       label="Click me!"
-      alertText="Clicked!"
+      onClickHandler={() => alert('Click!')}
     />
     <Button
       label="Kliknij!"
-      alertText="Kliknąłeś!"
+      onClickHandler={() => console.log('Klik!')}
     />
   </div>
 )

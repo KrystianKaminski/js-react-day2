@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Button = ({label, alertText}) => (
+const Button = ({label,onClickHandler}) => (
     <div>
         <button
-            onClick={()=> alert(alertText)}
+            onClick={onClickHandler}
         >
             {label}
         </button>
